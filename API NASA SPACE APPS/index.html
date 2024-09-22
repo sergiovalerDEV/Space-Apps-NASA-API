@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prueba de Nivel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+
+    <!-- Librería de Font Awesome para el botón de búsqueda -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Estilos importados para el mapa -->
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.2.2/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.2.2/maptiler-sdk.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+    <div id="infoBox">
+        <div id="infoTitle" class="title"></div>
+        <div id="infoDescription"></div>
+    </div>
+
+    <div id="filter-bar">
+        <label for="start-date">Fecha de inicio:</label>
+        <input type="date" id="start-date">
+
+        <label for="end-date">Fecha de fin:</label>
+        <input type="date" id="end-date">
+
+        <button id="filter-button">Filtrar eventos</button>
+        <button id="show-all-button">Mostrar todo</button>
+    </div>
+
+    <script src='js/index.js'></script>
+</body>
+
+</html>
